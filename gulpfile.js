@@ -34,6 +34,7 @@ gulp.task('scripts', ()=>
 
 gulp.task('default' , ['pug', 'stylus', 'scripts']);
 
+/*Ejecuto ,la tareas automaticamente*/
 gulp.task('watch', () => {
 	gulp.watch('./dev/view/*.pug', ['pug']);
 	gulp.watch('./dev/stylus/*.styl', ['stylus']);
