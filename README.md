@@ -1,6 +1,7 @@
 # Mi Prueba Front End
 
-Ejecutar el Archivo:   inicio.html
+Ejecutar el Archivo:   dist/inicio.html
+
 
 # Programas Utilizadas
 
