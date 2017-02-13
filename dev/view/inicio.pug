@@ -1,0 +1,52 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Mi Prueba de Front End
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto+Condensed')
+    // Jquery
+    script(src='https://code.jquery.com/jquery-1.12.4.min.js')
+    // Plugin Ordenar Acs
+    script(src='js/sortMe.js')
+    // Script Proceso
+    script(src='js/script.js')
+    link(rel='stylesheet', href='css/base.css')
+  body
+    .container-fluid
+      header
+        p.name
+          i.glyphicon.glyphicon-user
+          |  Luis Raúl D Huaman  Valverde
+    .container
+      h1 Ordenador de serie
+      .col-lg-12
+        // Formulario ingreso de numeros enteros
+        form(name='', action='', method='post')
+          .col-sm-8
+            input#numero_entero.form-control(type='text', name='numero_entero', size='5', maxlength='4', required='required', value='1')
+          .col-sm-4
+            input#btn_enviar.btn.btn-success(type='submit', value='Ingresar Número')
+            br
+          .col-sm-12
+            .options.text-left
+              button#btn-reiniciar.btn.btn-info(type='button')
+                i.glyphicon.glyphicon-repeat
+                |  Reiniciar
+              button#btn-asc.btn.btn-warning(type='button')
+                i.glyphicon.glyphicon-sort-by-attributes
+                |  Ordenar Ascendente
+      .clearfix
+      // Numeros enteros ingresados
+      .col-lg-12
+        .numeros
+          ul#numeros
+    .container-fluid
+      footer
+        p.luisraulhv © 2017 - Todos los Derechos Reservados
+
+
+    // Bootstrap JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
